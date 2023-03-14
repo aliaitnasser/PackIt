@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{C4536F31-40BC-41C8-B169-2BA2D661E1BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Abstractions", "Shared.Abstractions\Shared.Abstractions.csproj", "{F279F91A-6FF6-46E1-BF5B-A607012B482C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C4536F31-40BC-41C8-B169-2BA2D661E1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4536F31-40BC-41C8-B169-2BA2D661E1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4536F31-40BC-41C8-B169-2BA2D661E1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F279F91A-6FF6-46E1-BF5B-A607012B482C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F279F91A-6FF6-46E1-BF5B-A607012B482C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F279F91A-6FF6-46E1-BF5B-A607012B482C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F279F91A-6FF6-46E1-BF5B-A607012B482C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{7CB440DD-92B2-44AC-B02A-998D8C4B3948} = {6AF02A1A-ED31-4FD5-A9C0-1A9C18F7DFB2}
 		{91827814-DEDF-4F38-BF8F-9891FC5A8680} = {6AF02A1A-ED31-4FD5-A9C0-1A9C18F7DFB2}
 		{C4536F31-40BC-41C8-B169-2BA2D661E1BC} = {6AF02A1A-ED31-4FD5-A9C0-1A9C18F7DFB2}
+		{F279F91A-6FF6-46E1-BF5B-A607012B482C} = {B6B4B9D6-42D2-4716-99FF-E5AF2915F6D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A005074C-6FF0-4480-958C-26FF17254A45}
