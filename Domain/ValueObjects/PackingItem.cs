@@ -14,7 +14,7 @@ public record PackingItem
 	public uint Quantity { get; }
 	public bool IsPacked { get; init; }
 
-	public PackingItem(string name, uint quantity, bool isPacked)
+	public PackingItem(string name, uint quantity, bool isPacked = false)
 	{
 		if (string.IsNullOrWhiteSpace(name)) throw new EmptyPackingItemNameException();
 		if(quantity <= 0) throw new PackingItemQuantityZeroException();
