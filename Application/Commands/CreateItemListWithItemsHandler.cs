@@ -35,5 +35,12 @@ public class CreateItemListWithItemsHandler: ICommandHandler<CreateItemListWithI
 		var localization = new Localization(localizationWriteModel.City, localizationWriteModel.Country);
 
 		var weather = await _weatherService.GetWeatherAsync(localization);
+
+		if (weather is null)
+			throw new MissingLocalizationWeatherException(localization);
+
+		var packingList = _factory.CreateWithDefaultItems(id, name, localization, days, gender, weather.Temperature);
+
+		await _repository.AddAsync(packingList);
 	}
 }
